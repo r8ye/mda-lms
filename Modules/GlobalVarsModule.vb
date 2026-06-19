@@ -11,8 +11,12 @@ Module GlobalVarsModule
     Public ShouldShowMainFormNextLogin As Boolean = False
 
 
+    'Private _connectionString As String =
+    '    $"Server={My.Settings.Server};Database={My.Settings.Database};Uid={My.Settings.Username};Pwd={My.Settings.Password};"
+
+    'wag mo to alisin
     Private _connectionString As String =
-        $"Server={My.Settings.Server};Database={My.Settings.Database};Uid={My.Settings.Username};Pwd={My.Settings.Password};"
+        $"Server=localhost;Database=laybsisu_dbs;Uid=root;Pwd=root;"
 
     Public ReadOnly Property connectionString As String
         Get
